@@ -9,7 +9,7 @@ public class BoardGenerator : MonoBehaviour
 
     [Header("Size")]
     [SerializeField] private Vector2 size;
-
+    public Vector2 emptyPos;
 
     private void Start()
     {
@@ -18,7 +18,7 @@ public class BoardGenerator : MonoBehaviour
 
     private void InitiatePiecesPosition()
     {
-        Vector2 startPos = new Vector2(-(size.x / 2), (size.y / 2));
+        Vector2 startPos = new Vector2((int)-(size.x / 2), (int)(size.y / 2));
         Vector2 currentPos = new Vector2(startPos.x, startPos.y);
 
         for(int i=1;i<=size.x;i++)
@@ -28,6 +28,8 @@ public class BoardGenerator : MonoBehaviour
                 //the last piece need to be empty for sliding space
                 if (i == size.x && j == size.y)
                 {
+                    emptyPos = new Vector2(currentPos.x, currentPos.y);
+                    Debug.Log(emptyPos);
                     return;
                 }
 
