@@ -11,6 +11,9 @@ public class PuzzleBoard : MonoBehaviour
     [SerializeField] private Vector2 size;
     public Vector2 emptyPos;
 
+    public bool isMoving;
+    public Transform movingPiece;
+
     private void Start()
     {
         InitiatePiecesPosition();
