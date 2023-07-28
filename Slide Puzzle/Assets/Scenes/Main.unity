@@ -346,5 +346,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePrefab: {fileID: 972699336535132396, guid: 43d6f68cb92d2ae45ac7883fb2a776b9, type: 3}
-  sizeX: 3
-  sizeY: 3
+  size: {x: 3, y: 3, z: 0}
