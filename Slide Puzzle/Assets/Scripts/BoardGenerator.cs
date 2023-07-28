@@ -8,8 +8,8 @@ public class BoardGenerator : MonoBehaviour
     private GameObject piecePrefab;
 
     [Header("Size")]
-    [SerializeField] private int sizeX;
-    [SerializeField] private int sizeY;
+    [SerializeField] private Vector2 size;
+
 
     private void Start()
     {
@@ -18,28 +18,26 @@ public class BoardGenerator : MonoBehaviour
 
     private void InitiatePiecesPosition()
     {
-        int startPosX = -(sizeX/2);
-        int startPosY = (sizeY/2);
-        int posX = startPosX;
-        int posY = startPosY;
+        Vector2 startPos = new Vector2(-(size.x / 2), (size.y / 2));
+        Vector2 currentPos = new Vector2(startPos.x, startPos.y);
 
-        for(int i=1;i<=sizeX;i++)
+        for(int i=1;i<=size.x;i++)
         {
-            for(int j=1;j<=sizeY;j++)
+            for(int j=1;j<=size.y;j++)
             {
                 //the last piece need to be empty for sliding space
-                if (i == sizeX && j == sizeY)
+                if (i == size.x && j == size.y)
                 {
                     return;
                 }
 
                 GameObject piece = Instantiate(piecePrefab, transform);
-                piece.transform.position = new Vector3(posX, posY, 0);
-                posY -= 1;
+                piece.transform.position = new Vector3(currentPos.x, currentPos.y, 0);
+                currentPos.y -= 1;
             }
 
-            posX += 1;
-            posY = startPosY;
+            currentPos.x += 1;
+            currentPos.y = startPos.y;
         }
     }
 }
