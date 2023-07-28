@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BoardGenerator : MonoBehaviour
+public class PuzzleBoard : MonoBehaviour
 {
     [SerializeField]
     private GameObject piecePrefab;
@@ -29,7 +29,6 @@ public class BoardGenerator : MonoBehaviour
                 if (i == size.x && j == size.y)
                 {
                     emptyPos = new Vector2(currentPos.x, currentPos.y);
-                    Debug.Log(emptyPos);
                     return;
                 }
 
