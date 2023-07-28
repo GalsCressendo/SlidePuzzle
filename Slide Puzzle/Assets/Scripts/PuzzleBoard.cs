@@ -21,15 +21,19 @@ public class PuzzleBoard : MonoBehaviour
         Vector2 startPos = new Vector2((int)-(size.x / 2), (int)(size.y / 2));
         Vector2 currentPos = new Vector2(startPos.x, startPos.y);
 
+        //Generate random empty space position
+        Vector2 randomPos = new Vector2((int)Random.Range(1, size.x), (int)Random.Range(1, size.y));
+
         for(int i=1;i<=size.x;i++)
         {
             for(int j=1;j<=size.y;j++)
             {
-                //the last piece need to be empty for sliding space
-                if (i == size.x && j == size.y)
+                //empty one spot for sliding
+                if (i == randomPos.x && j == randomPos.y)
                 {
                     emptyPos = new Vector2(currentPos.x, currentPos.y);
-                    return;
+                    currentPos.y -= 1;
+                    continue;
                 }
 
                 GameObject piece = Instantiate(piecePrefab, transform);
