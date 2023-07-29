@@ -1,0 +1,685 @@
+fileFormatVersion: 2
+guid: 4ec712c1d1673ee40adbeec0c8b650c5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 135
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 3
+  flipbookColumns: 3
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bulba 5x5_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 535.2
+        width: 133.8
+        height: 133.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd865babb68ea94e96bfef7273cf020
+      internalID: -291557099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bulba 5x5_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 535.2
+        width: 133.8
+        height: 133.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9643791bd0766b1418210df25e675195
+      internalID: 855959104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bulba 5x5_2
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 535.2
+        width: 133.8
+        height: 133.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb6cafe69645174a92b2e6d433ea82a
+      internalID: -981469424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bulba 5x5_3
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 535.2
+        width: 133.8
+        height: 133.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d66f23dd7fa75499faf1a17bbb8cfd
+      internalID: 1907067124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bulba 5x5_4
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 535.2
+        width: 133.8
+        height: 133.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4450c37c7f83ecc4db6aa43b09c3d1a1
+      internalID: 103766338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bulba 5x5_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 402.2
+        width: 133.8
+        height: 133.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7af6e16426259749bd5704bc474bf66
+      internalID: -1327962293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bulba 5x5_6
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 402.2
+        width: 133.8
+        height: 133.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2126c309fb7a824eb99d80ea06005c5
+      internalID: -787181834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bulba 5x5_7
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 402.2
+        width: 133.8
+        height: 133.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4210a10d706e18541a27ac6604da248d
+      internalID: 26710750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bulba 5x5_8
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 402.2
+        width: 133.8
+        height: 133.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c295c645e042c54b95e910742bf9e5d
+      internalID: -1541947072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bulba 5x5_9
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 402.2
+        width: 133.8
+        height: 133.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e0b4f5a0ea0254ead39fb3306a071b
+      internalID: -327260876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bulba 5x5_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 269.2
+        width: 133.8
+        height: 133.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d58fb7989cef0db4a88001bcd3b8b1b5
+      internalID: -550618801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bulba 5x5_11
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 269.2
+        width: 133.8
+        height: 133.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 647bab7c872ea004d9b92c4ae64c770f
+      internalID: 141161833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bulba 5x5_12
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 269.2
+        width: 133.8
+        height: 133.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b2bb131712de244ad763ddcf40f019
+      internalID: 514988274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bulba 5x5_13
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 269.2
+        width: 133.8
+        height: 133.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 201aa05c81959eb4394252f454d36923
+      internalID: -1029104336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bulba 5x5_14
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 269.2
+        width: 133.8
+        height: 133.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea47aefa94cd0b4b9fb1f9704b19ec6
+      internalID: -588447942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bulba 5x5_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 136.2
+        width: 133.8
+        height: 133.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12c4404eee1ab9145bf6cd5524237a63
+      internalID: 512755432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bulba 5x5_16
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 136.2
+        width: 133.8
+        height: 133.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca2ccf1cb1e05b4197b5a2256d61157
+      internalID: -849692712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bulba 5x5_17
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 136.2
+        width: 133.8
+        height: 133.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2719d46083f4d5d439e2805a095ceb84
+      internalID: 710772245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bulba 5x5_18
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 136.2
+        width: 133.8
+        height: 133.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a3aec3af30e9dd42914e333aaafe8bf
+      internalID: -33954897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bulba 5x5_19
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 136.2
+        width: 133.8
+        height: 133.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2098c3a980fa35446bef02c032b8458a
+      internalID: -1912984177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bulba 5x5_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3.199997
+        width: 133.8
+        height: 133.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54044d00788add04dbeda5750fde1be9
+      internalID: -851454041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bulba 5x5_21
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 3.199997
+        width: 133.8
+        height: 133.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ca3618deef3414194236f61a8617d9
+      internalID: -1379905580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bulba 5x5_22
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 3.199997
+        width: 133.8
+        height: 133.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b193640cdf29b74daf65488142e9a61
+      internalID: -917446544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bulba 5x5_23
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 3.199997
+        width: 133.8
+        height: 133.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1b3686267798647b53642d307eb278
+      internalID: -431997179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bulba 5x5_24
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 3.199997
+        width: 133.8
+        height: 133.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56cf15a97bcb9954dbd88f7ff64e48ef
+      internalID: 1483673512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a02c4787c9ea2c94e903dc06ca00437b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Bulba 5x5_15: 512755432
+      Bulba 5x5_10: -550618801
+      Bulba 5x5_1: 855959104
+      Bulba 5x5_21: -1379905580
+      Bulba 5x5_5: -1327962293
+      Bulba 5x5_12: 514988274
+      Bulba 5x5_16: -849692712
+      Bulba 5x5_3: 1907067124
+      Bulba 5x5_0: -291557099
+      Bulba 5x5_2: -981469424
+      Bulba 5x5_19: -1912984177
+      Bulba 5x5_4: 103766338
+      Bulba 5x5_13: -1029104336
+      Bulba 5x5_23: -431997179
+      Bulba 5x5_18: -33954897
+      Bulba 5x5_7: 26710750
+      Bulba 5x5_11: 141161833
+      Bulba 5x5_6: -787181834
+      Bulba 5x5_17: 710772245
+      Bulba 5x5_8: -1541947072
+      Bulba 5x5_9: -327260876
+      Bulba 5x5_22: -917446544
+      Bulba 5x5_14: -588447942
+      Bulba 5x5_24: 1483673512
+      Bulba 5x5_20: -851454041
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -312,7 +312,7 @@ GameObject:
   - component: {fileID: 1265001591}
   - component: {fileID: 1265001592}
   m_Layer: 0
-  m_Name: Pieces
+  m_Name: Board
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -345,5 +345,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8fef98a345fad5439a752d4fe6cadaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  piecePrefab: {fileID: 972699336535132396, guid: 43d6f68cb92d2ae45ac7883fb2a776b9, type: 3}
-  size: {x: 3, y: 3, z: 0}
+  piecePrefab: {fileID: 7743880540391981571, guid: 396b929ad655b2d40b1bd3c5808ffd5f, type: 3}
+  size: {x: 3, y: 3}
+  emptyPos: {x: 0, y: 0}
+  puzzleAttribute: {fileID: 11400000, guid: 85753a207de9a84478ff58e89cc4f548, type: 2}
+  isMoving: 0
+  movingPiece: {fileID: 0}
