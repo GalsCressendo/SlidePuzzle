@@ -54,9 +54,9 @@ public class PuzzleBoard : MonoBehaviour
 
     private void SetPieceImage(SpriteRenderer renderer)
     {
-        if(pieceCounter<puzzleAttribute.pieces.Count)
+        if(pieceCounter<puzzleAttribute.attributes.Count)
         {
-            renderer.sprite = puzzleAttribute.pieces[pieceCounter];
+            renderer.sprite = puzzleAttribute.attributes[pieceCounter].image;
             pieceCounter += 1;
         }
 
@@ -65,12 +65,12 @@ public class PuzzleBoard : MonoBehaviour
     private void ShufflePieces()
     {
         //Knuth shuffle algorithm
-        for(int i=0;i<puzzleAttribute.pieces.Count;i++)
+        for(int i=0;i< puzzleAttribute.attributes.Count; i++)
         {
-            Sprite tmp = puzzleAttribute.pieces[i];
-            int r = Random.Range(i, puzzleAttribute.pieces.Count);
-            puzzleAttribute.pieces[i] = puzzleAttribute.pieces[r];
-            puzzleAttribute.pieces[r] = tmp;
+            var tmp = puzzleAttribute.attributes[i];
+            int r = Random.Range(i, puzzleAttribute.attributes.Count);
+            puzzleAttribute.attributes[i] = puzzleAttribute.attributes[r];
+            puzzleAttribute.attributes[r] = tmp;
         }
     }
 }

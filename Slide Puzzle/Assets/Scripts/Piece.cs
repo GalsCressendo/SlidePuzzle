@@ -11,6 +11,9 @@ public class Piece : MonoBehaviour
     private Vector2 source = new Vector2();
     private Vector2 destination = new Vector2();
 
+    //Attribute
+    public int pieceNumber;
+
     private void Awake()
     {
         board = transform.parent.GetComponent<PuzzleBoard>();

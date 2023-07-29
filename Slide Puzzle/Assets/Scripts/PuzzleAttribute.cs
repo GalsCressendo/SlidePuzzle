@@ -6,5 +6,13 @@ using UnityEngine;
 public class PuzzleAttribute : ScriptableObject
 {
     public string PuzzleName;
-    public List<Sprite> pieces;
+
+    [System.Serializable]
+    public class Attribute
+    {
+        public int number;
+        public Sprite image;
+    }
+
+    public List<Attribute> attributes;
 }

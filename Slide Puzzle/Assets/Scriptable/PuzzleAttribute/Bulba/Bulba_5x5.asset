@@ -13,28 +13,52 @@ MonoBehaviour:
   m_Name: Bulba_5x5
   m_EditorClassIdentifier: 
   PuzzleName: Bulba_5x5
-  pieces:
-  - {fileID: -291557099, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
-  - {fileID: 855959104, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
-  - {fileID: -981469424, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
-  - {fileID: 1907067124, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
-  - {fileID: 103766338, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
-  - {fileID: -1327962293, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
-  - {fileID: -787181834, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
-  - {fileID: 26710750, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
-  - {fileID: -1541947072, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
-  - {fileID: -327260876, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
-  - {fileID: -550618801, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
-  - {fileID: 141161833, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
-  - {fileID: 514988274, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
-  - {fileID: -1029104336, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
-  - {fileID: -588447942, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
-  - {fileID: 512755432, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
-  - {fileID: -849692712, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
-  - {fileID: 710772245, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
-  - {fileID: -33954897, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
-  - {fileID: -1912984177, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
-  - {fileID: -851454041, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
-  - {fileID: -1379905580, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
-  - {fileID: -917446544, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
-  - {fileID: -431997179, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
+  attributes:
+  - number: 1
+    image: {fileID: -291557099, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
+  - number: 2
+    image: {fileID: 855959104, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
+  - number: 3
+    image: {fileID: -981469424, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
+  - number: 4
+    image: {fileID: 1907067124, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
+  - number: 5
+    image: {fileID: 103766338, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
+  - number: 6
+    image: {fileID: -1327962293, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
+  - number: 7
+    image: {fileID: -787181834, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
+  - number: 8
+    image: {fileID: 26710750, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
+  - number: 9
+    image: {fileID: -1541947072, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
+  - number: 10
+    image: {fileID: -327260876, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
+  - number: 11
+    image: {fileID: -550618801, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
+  - number: 12
+    image: {fileID: 141161833, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
+  - number: 13
+    image: {fileID: 514988274, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
+  - number: 14
+    image: {fileID: -1029104336, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
+  - number: 15
+    image: {fileID: -588447942, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
+  - number: 16
+    image: {fileID: 512755432, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
+  - number: 17
+    image: {fileID: -849692712, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
+  - number: 18
+    image: {fileID: 710772245, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
+  - number: 19
+    image: {fileID: -33954897, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
+  - number: 20
+    image: {fileID: -1912984177, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
+  - number: 21
+    image: {fileID: -851454041, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
+  - number: 22
+    image: {fileID: -1379905580, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
+  - number: 23
+    image: {fileID: -917446544, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}
+  - number: 24
+    image: {fileID: -431997179, guid: 4ec712c1d1673ee40adbeec0c8b650c5, type: 3}

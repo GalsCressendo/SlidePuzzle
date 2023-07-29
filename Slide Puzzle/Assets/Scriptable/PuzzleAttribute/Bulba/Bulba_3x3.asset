@@ -13,12 +13,20 @@ MonoBehaviour:
   m_Name: Bulba_3x3
   m_EditorClassIdentifier: 
   PuzzleName: Bulba_3x3
-  pieces:
-  - {fileID: 1313660338, guid: 7201a6a0804e3364bb10620df2ad6bf4, type: 3}
-  - {fileID: -1739297358, guid: 7201a6a0804e3364bb10620df2ad6bf4, type: 3}
-  - {fileID: -1362713855, guid: 7201a6a0804e3364bb10620df2ad6bf4, type: 3}
-  - {fileID: -172409740, guid: 7201a6a0804e3364bb10620df2ad6bf4, type: 3}
-  - {fileID: -1196863602, guid: 7201a6a0804e3364bb10620df2ad6bf4, type: 3}
-  - {fileID: -667832476, guid: 7201a6a0804e3364bb10620df2ad6bf4, type: 3}
-  - {fileID: 600656779, guid: 7201a6a0804e3364bb10620df2ad6bf4, type: 3}
-  - {fileID: 467049336, guid: 7201a6a0804e3364bb10620df2ad6bf4, type: 3}
+  attributes:
+  - number: 1
+    image: {fileID: 1313660338, guid: 7201a6a0804e3364bb10620df2ad6bf4, type: 3}
+  - number: 2
+    image: {fileID: -1739297358, guid: 7201a6a0804e3364bb10620df2ad6bf4, type: 3}
+  - number: 3
+    image: {fileID: -1362713855, guid: 7201a6a0804e3364bb10620df2ad6bf4, type: 3}
+  - number: 4
+    image: {fileID: -172409740, guid: 7201a6a0804e3364bb10620df2ad6bf4, type: 3}
+  - number: 5
+    image: {fileID: -1196863602, guid: 7201a6a0804e3364bb10620df2ad6bf4, type: 3}
+  - number: 6
+    image: {fileID: -667832476, guid: 7201a6a0804e3364bb10620df2ad6bf4, type: 3}
+  - number: 7
+    image: {fileID: 600656779, guid: 7201a6a0804e3364bb10620df2ad6bf4, type: 3}
+  - number: 8
+    image: {fileID: 467049336, guid: 7201a6a0804e3364bb10620df2ad6bf4, type: 3}
