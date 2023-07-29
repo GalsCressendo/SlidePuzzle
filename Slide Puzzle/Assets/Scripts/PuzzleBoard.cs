@@ -10,7 +10,8 @@ public class PuzzleBoard : MonoBehaviour
     [SerializeField] private Vector2 size;
     public Vector2 emptyPos;
     [SerializeField]PuzzleAttribute puzzleAttribute;
-    
+    private PuzzleAttribute.Attribute[] tmpAtt;
+
     private int pieceCounter = 0;
     private int[,] winningArr;
     public int[,] currentArr;
@@ -72,8 +73,8 @@ public class PuzzleBoard : MonoBehaviour
     {
         if(pieceCounter<puzzleAttribute.attributes.Count)
         {
-            piece.GetComponent<SpriteRenderer>().sprite = puzzleAttribute.attributes[pieceCounter].image;
-            piece.GetComponent<Piece>().pieceNumber = puzzleAttribute.attributes[pieceCounter].number;
+            piece.GetComponent<SpriteRenderer>().sprite = tmpAtt[pieceCounter].image;
+            piece.GetComponent<Piece>().pieceNumber = tmpAtt[pieceCounter].number;
             pieceCounter += 1;
         }
 
@@ -81,26 +82,28 @@ public class PuzzleBoard : MonoBehaviour
 
     private void ShufflePieces()
     {
+        tmpAtt = puzzleAttribute.attributes.ToArray();
+
         //Knuth shuffle algorithm
-        for(int i=0;i< puzzleAttribute.attributes.Count; i++)
+        for (int i=0;i< tmpAtt.Length; i++)
         {
-            var tmp = puzzleAttribute.attributes[i];
+            var tmp = tmpAtt[i];
             int r = Random.Range(i, puzzleAttribute.attributes.Count);
-            puzzleAttribute.attributes[i] = puzzleAttribute.attributes[r];
-            puzzleAttribute.attributes[r] = tmp;
+            tmpAtt[i] = tmpAtt[r];
+            tmpAtt[r] = tmp;
         }
     }
 
     private void GenerateWinningArray()
     {
         winningArr = new int[(int)size.x, (int)size.y];
-        
-        for(int i = 0;i<winningArr.GetLength(0);i++)
+
+        for(int j = 0; j < winningArr.GetLength(1); j++)
         {
-            for(int j=0;j<winningArr.GetLength(1);j++)
+            for (int i = 0; i < winningArr.GetLength(0); i++)
             {
                 //if this is the last row and column
-                if(i == winningArr.GetLength(0)-1 && j == winningArr.GetLength(1)-1)
+                if (i == winningArr.GetLength(0) - 1 && j == winningArr.GetLength(1) - 1)
                 {
                     winningArr[i, j] = 0;
                 }
