@@ -24,8 +24,6 @@ public class PuzzleBoard : MonoBehaviour
         ShufflePieces();
         InitiatePiecesPosition();
         GenerateWinningArray();
-
-        CheckCurrentArr();
     }
 
     private void InitiatePiecesPosition()
