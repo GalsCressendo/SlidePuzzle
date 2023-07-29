@@ -11,6 +11,9 @@ public class Piece : MonoBehaviour
     private Vector2 source = new Vector2();
     private Vector2 destination = new Vector2();
 
+    public int currentX;
+    public int currentY;
+
     //Attribute
     public int pieceNumber;
 
@@ -57,6 +60,9 @@ public class Piece : MonoBehaviour
         {
             board.isMoving = false;
             board.movingPiece = null;
+
+            board.SwapPieceWithEmpty(ref currentX, ref currentY);
+            board.CheckWinState();
         }
     }
 }

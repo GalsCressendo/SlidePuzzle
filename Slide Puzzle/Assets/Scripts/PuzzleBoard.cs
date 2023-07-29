@@ -13,8 +13,10 @@ public class PuzzleBoard : MonoBehaviour
     
     private int pieceCounter = 0;
     private int[,] winningArr;
-    private int[,] currentArr;
+    public int[,] currentArr;
     int grid = 1;
+    private int emptyX;
+    private int emptyY;
 
     public bool isMoving;
     public Transform movingPiece;
@@ -46,6 +48,8 @@ public class PuzzleBoard : MonoBehaviour
                     emptyPos = new Vector2(currentPos.x, currentPos.y);
                     currentPos.y -= 1;
                     currentArr[i-1, j-1] = 0;
+                    emptyX = i - 1;
+                    emptyY = j - 1;
                     continue;
                 }
 
@@ -55,6 +59,8 @@ public class PuzzleBoard : MonoBehaviour
                 SetPieceImage(piece);
 
                 currentArr[i-1, j-1] = piece.GetComponent<Piece>().pieceNumber;
+                piece.GetComponent<Piece>().currentX = i - 1;
+                piece.GetComponent<Piece>().currentY = j - 1;
             }
 
             currentPos.x += 1;
@@ -105,5 +111,41 @@ public class PuzzleBoard : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void CheckWinState()
+    {
+        for(int i=0; i<size.x; i++)
+        {
+            for(int j=0;j<size.y;j++)
+            {
+                //if there is even one that does not match, then win conditions haven't been met.
+                if(currentArr[i,j]!=winningArr[i,j])
+                {
+                    return;
+                }
+            }
+        }
+
+        //If all the same, then win.
+        Debug.Log("WIN");
+    }
+
+    public void SwapPieceWithEmpty(ref int i, ref int j)
+    {
+        //Swap element value;
+        var tmp = currentArr[i, j];
+        currentArr[i, j] = 0;
+        currentArr[emptyX, emptyY] = tmp;
+
+        //Swap Coordinate
+        int tmpX = i;
+        int tmpY = j;
+
+        i = emptyX;
+        j = emptyY;
+
+        emptyX = tmpX;
+        emptyY = tmpY;
     }
 }
