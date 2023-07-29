@@ -13,6 +13,7 @@ public class PuzzleBoard : MonoBehaviour
     
     private int pieceCounter = 0;
     private int[,] winningArr;
+    private int[,] currentArr;
     int grid = 1;
 
     public bool isMoving;
@@ -23,6 +24,8 @@ public class PuzzleBoard : MonoBehaviour
         ShufflePieces();
         InitiatePiecesPosition();
         GenerateWinningArray();
+
+        CheckCurrentArr();
     }
 
     private void InitiatePiecesPosition()
@@ -33,6 +36,8 @@ public class PuzzleBoard : MonoBehaviour
         //Generate random empty space position
         Vector2 randomPos = new Vector2((int)Random.Range(1, size.x), (int)Random.Range(1, size.y));
 
+        currentArr = new int[(int)size.x, (int)size.y];
+
         for(int i=1;i<=size.x;i++)
         {
             for(int j=1;j<=size.y;j++)
@@ -42,13 +47,16 @@ public class PuzzleBoard : MonoBehaviour
                 {
                     emptyPos = new Vector2(currentPos.x, currentPos.y);
                     currentPos.y -= 1;
+                    currentArr[i-1, j-1] = 0;
                     continue;
                 }
 
                 GameObject piece = Instantiate(piecePrefab, transform);
                 piece.transform.position = new Vector3(currentPos.x, currentPos.y, 0);
                 currentPos.y -= 1;
-                SetPieceImage(piece.GetComponent<SpriteRenderer>());
+                SetPieceImage(piece);
+
+                currentArr[i-1, j-1] = piece.GetComponent<Piece>().pieceNumber;
             }
 
             currentPos.x += 1;
@@ -56,11 +64,12 @@ public class PuzzleBoard : MonoBehaviour
         }
     }
 
-    private void SetPieceImage(SpriteRenderer renderer)
+    private void SetPieceImage(GameObject piece)
     {
         if(pieceCounter<puzzleAttribute.attributes.Count)
         {
-            renderer.sprite = puzzleAttribute.attributes[pieceCounter].image;
+            piece.GetComponent<SpriteRenderer>().sprite = puzzleAttribute.attributes[pieceCounter].image;
+            piece.GetComponent<Piece>().pieceNumber = puzzleAttribute.attributes[pieceCounter].number;
             pieceCounter += 1;
         }
 
@@ -96,15 +105,6 @@ public class PuzzleBoard : MonoBehaviour
                     winningArr[i, j] = grid;
                     grid += 1;
                 }
-            }
-        }
-
-        //debug only
-        for(int i =0;i<winningArr.GetLength(0); i++)
-        {
-            for (int j =0; j<winningArr.GetLength(1);j++)
-            {
-                Debug.Log(winningArr[i, j]);
             }
         }
     }
