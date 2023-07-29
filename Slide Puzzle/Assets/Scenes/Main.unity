@@ -346,8 +346,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecePrefab: {fileID: 7743880540391981571, guid: 396b929ad655b2d40b1bd3c5808ffd5f, type: 3}
-  size: {x: 3, y: 3}
+  size: {x: 2, y: 3}
   emptyPos: {x: 0, y: 0}
-  puzzleAttribute: {fileID: 11400000, guid: 85753a207de9a84478ff58e89cc4f548, type: 2}
+  puzzleAttribute: {fileID: 11400000, guid: fbaaf83f6ff3aaf4b84eb818754361e6, type: 2}
   isMoving: 0
   movingPiece: {fileID: 0}
