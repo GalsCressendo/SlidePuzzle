@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class PuzzleBoard : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject piecePrefab;
+    [SerializeField]private GameObject piecePrefab;
 
-    [Header("Size")]
+    [Header("Attributes")]
     [SerializeField] private Vector2 size;
     public Vector2 emptyPos;
+    [SerializeField]PuzzleAttribute puzzleAttribute;
+    private int pieceCounter = 0;
 
     public bool isMoving;
     public Transform movingPiece;
 
     private void Start()
     {
+        ShufflePieces();
         InitiatePiecesPosition();
     }
 
@@ -42,10 +44,33 @@ public class PuzzleBoard : MonoBehaviour
                 GameObject piece = Instantiate(piecePrefab, transform);
                 piece.transform.position = new Vector3(currentPos.x, currentPos.y, 0);
                 currentPos.y -= 1;
+                SetPieceImage(piece.GetComponent<SpriteRenderer>());
             }
 
             currentPos.x += 1;
             currentPos.y = startPos.y;
+        }
+    }
+
+    private void SetPieceImage(SpriteRenderer renderer)
+    {
+        if(pieceCounter<puzzleAttribute.pieces.Count)
+        {
+            renderer.sprite = puzzleAttribute.pieces[pieceCounter];
+            pieceCounter += 1;
+        }
+
+    }
+
+    private void ShufflePieces()
+    {
+        //Knuth shuffle algorithm
+        for(int i=0;i<puzzleAttribute.pieces.Count;i++)
+        {
+            Sprite tmp = puzzleAttribute.pieces[i];
+            int r = Random.Range(i, puzzleAttribute.pieces.Count);
+            puzzleAttribute.pieces[i] = puzzleAttribute.pieces[r];
+            puzzleAttribute.pieces[r] = tmp;
         }
     }
 }
