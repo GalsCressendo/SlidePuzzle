@@ -10,7 +10,10 @@ public class PuzzleBoard : MonoBehaviour
     [SerializeField] private Vector2 size;
     public Vector2 emptyPos;
     [SerializeField]PuzzleAttribute puzzleAttribute;
+    
     private int pieceCounter = 0;
+    private int[,] winningArr;
+    int grid = 1;
 
     public bool isMoving;
     public Transform movingPiece;
@@ -19,6 +22,7 @@ public class PuzzleBoard : MonoBehaviour
     {
         ShufflePieces();
         InitiatePiecesPosition();
+        GenerateWinningArray();
     }
 
     private void InitiatePiecesPosition()
@@ -71,6 +75,37 @@ public class PuzzleBoard : MonoBehaviour
             int r = Random.Range(i, puzzleAttribute.attributes.Count);
             puzzleAttribute.attributes[i] = puzzleAttribute.attributes[r];
             puzzleAttribute.attributes[r] = tmp;
+        }
+    }
+
+    private void GenerateWinningArray()
+    {
+        winningArr = new int[(int)size.x, (int)size.y];
+        
+        for(int i = 0;i<winningArr.GetLength(0);i++)
+        {
+            for(int j=0;j<winningArr.GetLength(1);j++)
+            {
+                //if this is the last row and column
+                if(i == winningArr.GetLength(0)-1 && j == winningArr.GetLength(1)-1)
+                {
+                    winningArr[i, j] = 0;
+                }
+                else
+                {
+                    winningArr[i, j] = grid;
+                    grid += 1;
+                }
+            }
+        }
+
+        //debug only
+        for(int i =0;i<winningArr.GetLength(0); i++)
+        {
+            for (int j =0; j<winningArr.GetLength(1);j++)
+            {
+                Debug.Log(winningArr[i, j]);
+            }
         }
     }
 }
